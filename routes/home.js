@@ -1,0 +1,8 @@
+const router =  require('express').Router();
+const auth = require('../middleware/authetication');
+
+router.get('/home', auth, (req, res, next) => {
+    res.send('You are successfully authenticated and are on home page....');
+});
+
+module.exports = router;
