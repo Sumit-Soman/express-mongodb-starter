@@ -15,5 +15,5 @@ module.exports = function(app) {
     app.use('/api/user', register);
     app.use('/api/user',login);
     app.use('/api/user', home);
-  };
+};
 
